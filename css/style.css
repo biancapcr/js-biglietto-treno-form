@@ -145,3 +145,8 @@ main.container {
   font-weight: 500;
   color: #fff;
 }
+.ticket-output .ticket-icon {
+  width: 100px;
+  height: auto;
+  position: absolute;
+}
