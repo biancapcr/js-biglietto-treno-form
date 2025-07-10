@@ -28,7 +28,8 @@ document.getElementById('genera').addEventListener('click', function() {
   // 7) Iniezione in pagina
    document.getElementById('ticket').innerHTML = `<div class="ticket">
       <h2>Il tuo biglietto</h2>
-      <div><strong>Dettaglio Passeggero:</strong> ${name}</div>
+       <img src="../assets/" alt="🎉" class="ticket-icon">
+      <div><strong>Dettaglio Passeggero</strong> ${name}</div>
       <p><strong>Offerta:</strong> ${offerText}</p>
       <div><strong>Carrozza:</strong> ${carriage}</div>
       <div><strong>Codice CP:</strong> ${code}</div>

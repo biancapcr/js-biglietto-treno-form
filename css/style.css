@@ -48,7 +48,7 @@ main.container {
   justify-content: space-between;
 }
 .ticket-form .field {
-  flex: 1 1 30%;
+  flex: 1 1 25%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -69,7 +69,7 @@ main.container {
     width: 200px;
 }
 .actions {
-  flex: 1 1 calc(33% - 1rem);        
+  flex: 1 1 100%;       
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -96,4 +96,52 @@ main.container {
 }
 .btn-secondary:hover {
   background: #613945;
+}
+
+/* Risultato (ticket) */
+.ticket-output {
+  width: 100%;
+  max-width: 600px;
+  background: #9C757C;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #333;
+}
+.ticket-output .ticket > :not(h2):not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgba(255,255,255,0.25), rgba(255,255,255,0.05));
+}
+
+.ticket-output .ticket {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+.ticket-output .ticket h2 {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  
+}
+.ticket-output .ticket > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-bottom: 10px;  
+}
+.ticket-output .ticket div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+.ticket-output .ticket strong {
+  font-weight: 500;
+  color: #fff;
 }
