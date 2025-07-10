@@ -4,3 +4,62 @@
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* centra orizzontalmente */
+  justify-content: center;    /* centra verticalmente */
+  background: url('../assets/ghibli5.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main content */
+main.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Form */
+.ticket-form {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #333;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ticket-form .field {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.ticket-form .field label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+.ticket-form .field input,
+.ticket-form .field select {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.logo{
+    width: 200px;
+}
