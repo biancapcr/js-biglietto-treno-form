@@ -23,6 +23,7 @@ body {
 }
 .site-header h1 {
   font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.693);
 }
 
 /* Main content */
@@ -123,11 +124,12 @@ main.container {
 }
 
 .ticket-output .ticket h2 {
-  font-size: 25px;
+  font-size: 23px;
   color: #fff;
   text-align: center;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.693);
   
 }
 .ticket-output .ticket > div:first-of-type {
