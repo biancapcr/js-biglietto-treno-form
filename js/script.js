@@ -34,5 +34,11 @@ document.getElementById('genera').addEventListener('click', function() {
       <div><strong>Codice CP:</strong> ${code}</div>
       <div><strong>Costo biglietto:</strong> ${formattedPrice}</div>
     </div>`;
+});
 
+annulla.addEventListener('click', () => {
+  document.getElementById('name').value = '';
+  document.getElementById('km').value = '';
+  document.getElementById('age').value = '';
+  ticketContainer.innerHTML = '';
 });
