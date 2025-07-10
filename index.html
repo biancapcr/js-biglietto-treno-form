@@ -8,43 +8,32 @@
 </head>
 <body>
      <h1>Calcolo Prezzo Biglietto</h1>
+  <main class="container">
+    <div class="ticket-form">
+      <div class="field">
+        <label for="name">Nome e Cognome</label>
+        <input type="text" id="name" placeholder="Mario Rossi">
+      </div>
+      <div class="field">
+        <label for="km">Km da percorrere</label>
+        <input type="number" id="km" placeholder="Es. 100">
+      </div>
+      <div class="field">
+        <label for="age">Fascia d'età</label>
+        <select id="age">
+          <option value="adulto">Maggiorenne</option>
+          <option value="minorenne">Minorenne</option>
+          <option value="over65">Over 65</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="genera">Genera</button>
+        <button type="button" class="btn btn-secondary" id="annulla">Annulla</button>
+      </div>
+    </div>
 
-  <label>
-    Nome Cognome:
-    <input type="text" id="name" placeholder="es. Mario Rossi">
-  </label>
-  <br><br>
-
-  <label>
-    Km da percorrere:
-    <input type="number" id="km" placeholder="es. 10">
-  </label>
-  <br><br>
-
-  <label>
-    Fascia d'età:
-    <select id="age">
-      <option value="adulto">Maggiorenne</option>
-      <option value="minorenne">Minorenne</option>
-      <option value="over65">Over 65</option>
-    </select>
-  </label>
-  <br><br>
-
-  <button id="genera">Genera</button>
-  <button type="annulla">Annulla</button>
-
-   <div id="ticket"></div>
-
-
-
-
-
-
-
-
-
-
+    <div id="ticket" class="ticket-output"></div>
+  </main>
 
     <script src="./js/script.js"></script>
 </body>
