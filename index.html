@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-     <h1>Calcolo Prezzo Biglietto</h1>
+     <!-- Header -->
+
+      <header class="site-header">
+    <div class="container">
+      <h1>Calcola il tuo Biglietto</h1>
+    </div>
+  </header>
+
+  <!-- Contenuto principale -->
+
   <main class="container">
     <div class="ticket-form">
       <div class="field">
@@ -26,11 +35,16 @@
           <option value="over65">Over 65</option>
         </select>
       </div>
+
+       <!-- Bottoni Genera e Annulla --> 
+
       <div class="actions">
         <button type="button" class="btn btn-primary" id="genera">Genera</button>
         <button type="button" class="btn btn-secondary" id="annulla">Annulla</button>
       </div>
     </div>
+    
+      <!-- Contenitore per il risultato del biglietto -->
 
     <div id="ticket" class="ticket-output"></div>
   </main>
