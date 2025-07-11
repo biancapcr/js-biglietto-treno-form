@@ -8,7 +8,7 @@ document.getElementById('genera').addEventListener('click', function() {
   // Calcola prezzo base
   let price = km * 0.21;
 
-  // 3) Applicazione sconto
+  //  Applicazione sconto
   let offerText = 'Biglietto Standard';
   if (ageCat === 'minorenne') {
     price *= 0.8;
@@ -25,7 +25,7 @@ document.getElementById('genera').addEventListener('click', function() {
   const carriage = Math.floor(Math.random() * 9) + 1;
   const code = Math.floor(Math.random() * 90000) + 10000;
 
-  // 7) Iniezione in pagina
+  // Iniezione in pagina
    document.getElementById('ticket').innerHTML = `<div class="ticket">
    <img src="../assets/icon.gif" alt="icon" class="ticket-icon">
       <h2>Il tuo biglietto</h2>
@@ -36,7 +36,7 @@ document.getElementById('genera').addEventListener('click', function() {
       <div><strong>Costo biglietto:</strong> ${formattedPrice}</div>
     </div>`;
 });
-
+   // Annulla btn
 annulla.addEventListener('click', () => {
   document.getElementById('name').value = '';
   document.getElementById('km').value = '';
